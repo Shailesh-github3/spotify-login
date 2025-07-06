@@ -3,13 +3,13 @@
 A simple, responsive login page mimicking Spotify's login interface, built with HTML, CSS, and minimal JavaScript for a password toggle feature.
 
 ## Screenshot
-![Login Page](screenshots/login.png)
+![image](https://github.com/user-attachments/assets/4fcc0f55-1d03-4a8e-a620-9bb34aeb7999)
+
 
 ## Features
 - **Responsive Design**: Centered login container (300px × 500px) with a dark theme.
 - **Social Login Buttons**: Google and Apple buttons with centered text and left-aligned icons, redirecting to respective authentication pages.
 - **Form Validation**: HTML5 `required` validation for username and password fields with custom CSS error messages (red border and text) when fields are empty and focused.
-- **Password Toggle**: Show/hide password functionality using a Font Awesome eye icon (requires JavaScript).
 - **Centered Spotify Logo**: Spotify logo displayed prominently at the top.
 - **Clean Styling**: Uses Font Awesome icons, a dark background, and Spotify's green (`#1DB954`) for the submit button.
 
@@ -41,13 +41,11 @@ A simple, responsive login page mimicking Spotify's login interface, built with 
 2. Interact with the form:
    - Click Google or Apple buttons to redirect to their login pages.
    - Enter username and password. Empty fields show a red border and error message ("Username is required" or "Password is required") when focused.
-   - Click the eye icon next to the password field to toggle visibility.
    - Submitting with empty fields triggers browser-native validation tooltips.
 3. Customize as needed (e.g., add form submission logic or modify styles in `css/loginstyle.css`).
 
 ## Notes
 - **Form Submission**: The form lacks an `action` attribute. Add a backend endpoint or JavaScript handler for submission.
-- **JavaScript**: The password toggle requires JavaScript. Remove the toggle icon and script for a JavaScript-free version.
 - **CSS**: Styles can be in `css/loginstyle.css` or inline in `index.html`. Current code assumes an external file.
 - **Screenshot**: Capture the login page and save as `screenshots/login.png`. Update the path in this README if renamed.
 - **Browser Compatibility**: Tested in modern browsers (Chrome, Firefox, Edge). HTML5 validation tooltips vary by browser.
